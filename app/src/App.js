@@ -116,7 +116,7 @@ function App() {
 
       {ifAllSelected ? (
         <div>
-          You selected {currentCountry}, {currentState}, {currentCity}
+          You selected {currentCountry}, {currentState}, {currentCity}:
         </div>
       ) : (
         <div></div>
