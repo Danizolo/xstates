@@ -36,6 +36,7 @@ function App() {
       setCountry(data.data);
     } catch (error) {
       console.error(error);
+      setCountry([]);
     }
   };
 
@@ -48,6 +49,8 @@ function App() {
       setToggleStateInput(false);
     } catch (error) {
       console.error(error);
+      setState([]);
+      setToggleStateInput(true);
     }
   };
 
@@ -60,6 +63,8 @@ function App() {
       setToggleCityInput(false);
     } catch (error) {
       console.error(error);
+      setCities([]);
+      setToggleCityInput(true);
     }
   };
 
