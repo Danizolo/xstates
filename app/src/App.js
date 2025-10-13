@@ -103,7 +103,7 @@ function App() {
           }}
           disabled={toggleCityInput}
         >
-          <option value="">Select State</option>
+          <option value="">Select City</option>
           {city.map((ele, index) => {
             return (
               <option value={ele} key={ele}>
@@ -116,7 +116,7 @@ function App() {
 
       {ifAllSelected ? (
         <p>
-          You selected {currentCountry},{currentState},{currentCity}
+          You selected {currentCity}, {currentState}, {currentCountry}
         </p>
       ) : (
         <div></div>
